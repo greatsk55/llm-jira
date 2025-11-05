@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env
+.llm-jira/
+prisma/*.db
+prisma/*.db-journal
+web/node_modules/
+web/dist/
+web/.vite/
+*.pid
+*.seed
+*.pid.lock

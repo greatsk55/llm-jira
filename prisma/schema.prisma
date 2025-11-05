@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Issue {
+  id          String       @id @default(uuid())
+  title       String
+  description String?
+  status      String       @default("TODO") // TODO, ING, DONE, PENDING
+  priority    String       @default("MEDIUM") // LOW, MEDIUM, HIGH
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  attachments Attachment[]
+  executions  Execution[]
+
+  @@index([status])
+  @@index([priority])
+}
+
+model Attachment {
+  id        String   @id @default(uuid())
+  issueId   String
+  fileName  String
+  filePath  String
+  fileType  String
+  fileSize  Int
+  createdAt DateTime @default(now())
+
+  issue Issue @relation(fields: [issueId], references: [id], onDelete: Cascade)
+
+  @@index([issueId])
+}
+
+model Execution {
+  id           String          @id @default(uuid())
+  issueId      String
+  status       String          @default("RUNNING") // RUNNING, SUCCESS, FAILED
+  llmProvider  String
+  llmResponse  String?
+  testResults  String?         // JSON string
+  command      String?         // 실행된 명령어
+  startedAt    DateTime        @default(now())
+  completedAt  DateTime?
+  error        String?
+
+  issue Issue @relation(fields: [issueId], references: [id], onDelete: Cascade)
+
+  @@index([issueId])
+  @@index([status])
+}
+
+model Release {
+  id            String   @id @default(uuid())
+  version       String   @unique
+  gitCommitHash String?
+  gitTag        String?
+  snapshot      String   // JSON string of issues state
+  createdAt     DateTime @default(now())
+
+  @@index([version])
+  @@index([createdAt])
+}
