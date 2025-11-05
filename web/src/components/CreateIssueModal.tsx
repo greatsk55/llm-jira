@@ -13,6 +13,7 @@ export default function CreateIssueModal({ onClose, onCreated }: CreateIssueModa
     title: '',
     description: '',
     priority: Priority.MEDIUM,
+    domain: '',
   });
   const [submitting, setSubmitting] = useState(false);
 
@@ -95,6 +96,23 @@ export default function CreateIssueModal({ onClose, onCreated }: CreateIssueModa
               <option value={Priority.MEDIUM}>보통</option>
               <option value={Priority.HIGH}>높음</option>
             </select>
+          </div>
+
+          <div className="space-y-2">
+            <label htmlFor="domain" className="text-sm font-medium">
+              도메인 태그
+            </label>
+            <input
+              id="domain"
+              type="text"
+              value={formData.domain}
+              onChange={(e) => setFormData({ ...formData, domain: e.target.value })}
+              className="input"
+              placeholder="예: frontend, backend, database, auth"
+            />
+            <p className="text-xs text-gray-500">
+              병렬 실행을 위한 도메인 태그입니다. 같은 도메인의 작업은 동시에 실행되지 않습니다.
+            </p>
           </div>
 
           <div className="flex gap-3 pt-6">

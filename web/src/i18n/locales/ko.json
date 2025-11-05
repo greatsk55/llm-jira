@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "LLM JIRA",
+    "loading": "로딩 중..."
+  },
+  "board": {
+    "title": "작업 보드",
+    "newTask": "새 작업",
+    "llmSettings": "LLM 설정",
+    "searchPlaceholder": "작업 검색...",
+    "priorityFilter": "우선순위",
+    "allPriorities": "전체",
+    "hideDone": "완료 숨기기",
+    "releaseView": "릴리즈 보기",
+    "currentView": "현재 보기",
+    "readOnlyNotice": "이 보기에서는 작업을 편집할 수 없습니다.",
+    "status": {
+      "TODO": "할 일",
+      "IN_PROGRESS": "진행 중",
+      "DONE": "완료",
+      "PENDING": "보류"
+    },
+    "priority": {
+      "HIGH": "높음",
+      "MEDIUM": "보통",
+      "LOW": "낮음"
+    },
+    "noTasks": "작업 없음"
+  },
+  "issueCard": {
+    "execute": "LLM 실행",
+    "executing": "LLM 실행 중...",
+    "attachments": "첨부파일",
+    "executions": "실행 기록"
+  },
+  "issueDetail": {
+    "title": "작업 상세",
+    "edit": "수정",
+    "save": "저장",
+    "cancel": "취소",
+    "titleLabel": "제목",
+    "titleRequired": "제목 *",
+    "descriptionLabel": "설명",
+    "priorityLabel": "우선순위",
+    "status": "상태",
+    "createdAt": "생성일",
+    "updatedAt": "수정일",
+    "attachments": "첨부 파일",
+    "addFile": "파일 추가",
+    "uploading": "업로드 중...",
+    "noAttachments": "첨부된 파일이 없습니다.",
+    "download": "다운로드",
+    "delete": "삭제",
+    "executionHistory": "실행 기록",
+    "output": "출력:",
+    "error": "에러:",
+    "deleteConfirm": "이 파일을 삭제하시겠습니까?"
+  },
+  "createIssue": {
+    "title": "새 작업 생성",
+    "titleLabel": "제목",
+    "titleRequired": "제목 *",
+    "descriptionLabel": "설명",
+    "priorityLabel": "우선순위",
+    "cancel": "취소",
+    "create": "생성"
+  },
+  "llmSettings": {
+    "title": "LLM 설정",
+    "providerLabel": "LLM 제공자 선택",
+    "claudeLabel": "Claude (Anthropic)",
+    "claudeDesc": "claude CLI를 사용합니다",
+    "chatgptLabel": "ChatGPT (OpenAI)",
+    "chatgptDesc": "chatgpt CLI를 사용합니다",
+    "customLabel": "커스텀",
+    "customDesc": "사용자 정의 CLI 명령어",
+    "commandTemplate": "CLI 명령어 템플릿",
+    "commandPlaceholder": "예: my-llm --prompt",
+    "commandNote": "프롬프트는 명령어 뒤에 자동으로 추가됩니다",
+    "commandPreview": "실행될 명령어 미리보기:",
+    "languageLabel": "언어 설정",
+    "korean": "한국어 (Korean)",
+    "english": "영어 (English)",
+    "japanese": "일본어 (Japanese)",
+    "chinese": "중국어 (Chinese)",
+    "languageNote": "LLM이 사용할 언어와 룰 파일이 작성될 언어입니다",
+    "generateRuleFiles": "룰 파일 자동 생성",
+    "generateRuleFilesDesc": "프로젝트 루트에 LLM 가이드라인 파일을 자동으로 생성합니다",
+    "warning": "주의사항",
+    "warningMessage": "선택한 LLM CLI가 로컬 터미널에 설치되어 있어야 합니다.",
+    "cancel": "취소",
+    "save": "저장"
+  },
+  "taskExecutor": {
+    "title": "작업 실행",
+    "execute": "실행",
+    "executing": "실행 중...",
+    "settingsRequired": "먼저 LLM 설정을 해주세요."
+  },
+  "messages": {
+    "success": "성공",
+    "error": "오류",
+    "updateFailed": "작업 수정에 실패했습니다",
+    "uploadFailed": "파일 업로드에 실패했습니다",
+    "downloadFailed": "파일 다운로드에 실패했습니다",
+    "deleteFailed": "파일 삭제에 실패했습니다",
+    "executionFailed": "LLM 작업 실행에 실패했습니다",
+    "createFailed": "작업 생성에 실패했습니다"
+  }
+}

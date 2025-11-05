@@ -12,7 +12,14 @@ const api = axios.create({
 
 // Issues API
 export const issuesApi = {
-  getAll: async (params?: { status?: string; priority?: string }) => {
+  getAll: async (params?: {
+    status?: string;
+    priority?: string;
+    domain?: string;
+    search?: string;
+    sortBy?: string;
+    sortOrder?: 'asc' | 'desc';
+  }) => {
     const response = await api.get<Issue[]>('/issues', { params });
     return response.data;
   },
@@ -103,6 +110,32 @@ export const releasesApi = {
 
   checkout: async (id: string) => {
     const response = await api.post(`/releases/${id}/checkout`);
+    return response.data;
+  },
+};
+
+// Tasks API
+export const tasksApi = {
+  execute: async (issueId: string, command: string, llmProvider?: string) => {
+    const response = await api.post(`/tasks/${issueId}/execute`, {
+      command,
+      llmProvider: llmProvider || 'system',
+    });
+    return response.data;
+  },
+
+  getStatus: async (issueId: string) => {
+    const response = await api.get(`/tasks/${issueId}/status`);
+    return response.data;
+  },
+
+  cancel: async (issueId: string) => {
+    const response = await api.post(`/tasks/${issueId}/cancel`);
+    return response.data;
+  },
+
+  getRunning: async () => {
+    const response = await api.get('/tasks/running');
     return response.data;
   },
 };

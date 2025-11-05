@@ -5,6 +5,8 @@ import { issuesRouter } from './routes/issues';
 import { attachmentsRouter } from './routes/attachments';
 import { executionsRouter } from './routes/executions';
 import { releasesRouter } from './routes/releases';
+import tasksRouter from './routes/tasks';
+import { llmRouter } from './routes/llm';
 import { getConfigDir } from '../shared/config';
 
 const app = express();
@@ -23,6 +25,8 @@ app.use('/api/issues', issuesRouter);
 app.use('/api/attachments', attachmentsRouter);
 app.use('/api/executions', executionsRouter);
 app.use('/api/releases', releasesRouter);
+app.use('/api/tasks', tasksRouter);
+app.use('/api/llm', llmRouter);
 
 // 헬스 체크
 app.get('/api/health', (req, res) => {

@@ -3,9 +3,7 @@ dist/
 *.log
 .DS_Store
 .env
-.llm-jira/
-prisma/*.db
-prisma/*.db-journal
+.llm-jira/uploads/
 web/node_modules/
 web/dist/
 web/.vite/

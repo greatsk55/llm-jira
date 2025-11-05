@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "LLM JIRA",
+    "loading": "読み込み中..."
+  },
+  "board": {
+    "title": "タスクボード",
+    "newTask": "新規タスク",
+    "llmSettings": "LLM設定",
+    "searchPlaceholder": "タスクを検索...",
+    "priorityFilter": "優先度",
+    "allPriorities": "すべて",
+    "hideDone": "完了を非表示",
+    "releaseView": "リリースビュー",
+    "currentView": "現在のビュー",
+    "readOnlyNotice": "このビューではタスクを編集できません。",
+    "status": {
+      "TODO": "未着手",
+      "IN_PROGRESS": "進行中",
+      "DONE": "完了",
+      "PENDING": "保留"
+    },
+    "priority": {
+      "HIGH": "高",
+      "MEDIUM": "中",
+      "LOW": "低"
+    },
+    "noTasks": "タスクなし"
+  },
+  "issueCard": {
+    "execute": "LLM実行",
+    "executing": "実行中...",
+    "attachments": "添付ファイル",
+    "executions": "実行履歴"
+  },
+  "issueDetail": {
+    "title": "タスク詳細",
+    "edit": "編集",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "titleLabel": "タイトル",
+    "titleRequired": "タイトル *",
+    "descriptionLabel": "説明",
+    "priorityLabel": "優先度",
+    "status": "ステータス",
+    "createdAt": "作成日",
+    "updatedAt": "更新日",
+    "attachments": "添付ファイル",
+    "addFile": "ファイル追加",
+    "uploading": "アップロード中...",
+    "noAttachments": "添付ファイルはありません。",
+    "download": "ダウンロード",
+    "delete": "削除",
+    "executionHistory": "実行履歴",
+    "output": "出力:",
+    "error": "エラー:",
+    "deleteConfirm": "このファイルを削除してもよろしいですか？"
+  },
+  "createIssue": {
+    "title": "新規タスク作成",
+    "titleLabel": "タイトル",
+    "titleRequired": "タイトル *",
+    "descriptionLabel": "説明",
+    "priorityLabel": "優先度",
+    "cancel": "キャンセル",
+    "create": "作成"
+  },
+  "llmSettings": {
+    "title": "LLM設定",
+    "providerLabel": "LLMプロバイダーを選択",
+    "claudeLabel": "Claude (Anthropic)",
+    "claudeDesc": "claude CLIを使用します",
+    "chatgptLabel": "ChatGPT (OpenAI)",
+    "chatgptDesc": "chatgpt CLIを使用します",
+    "customLabel": "カスタム",
+    "customDesc": "カスタムCLIコマンド",
+    "commandTemplate": "CLIコマンドテンプレート",
+    "commandPlaceholder": "例: my-llm --prompt",
+    "commandNote": "プロンプトはコマンドの後に自動的に追加されます",
+    "commandPreview": "コマンドプレビュー:",
+    "languageLabel": "言語設定",
+    "korean": "韓国語 (Korean)",
+    "english": "英語 (English)",
+    "japanese": "日本語 (Japanese)",
+    "chinese": "中国語 (Chinese)",
+    "languageNote": "LLMが使用する言語とルールファイルが記述される言語です",
+    "generateRuleFiles": "ルールファイル自動生成",
+    "generateRuleFilesDesc": "プロジェクトルートにLLMガイドラインファイルを自動生成します",
+    "warning": "注意事項",
+    "warningMessage": "選択したLLM CLIがローカルターミナルにインストールされている必要があります。",
+    "cancel": "キャンセル",
+    "save": "保存"
+  },
+  "taskExecutor": {
+    "title": "タスク実行",
+    "execute": "実行",
+    "executing": "実行中...",
+    "settingsRequired": "まずLLM設定を行ってください。"
+  },
+  "messages": {
+    "success": "成功",
+    "error": "エラー",
+    "updateFailed": "タスクの更新に失敗しました",
+    "uploadFailed": "ファイルのアップロードに失敗しました",
+    "downloadFailed": "ファイルのダウンロードに失敗しました",
+    "deleteFailed": "ファイルの削除に失敗しました",
+    "executionFailed": "LLMタスクの実行に失敗しました",
+    "createFailed": "タスクの作成に失敗しました"
+  }
+}

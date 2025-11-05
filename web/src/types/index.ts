@@ -27,6 +27,7 @@ export interface Issue {
   description: string | null;
   status: IssueStatus;
   priority: Priority;
+  domain?: string | null;
   createdAt: Date | string;
   updatedAt: Date | string;
   attachments?: Attachment[];
@@ -69,6 +70,7 @@ export interface CreateIssueDto {
   title: string;
   description?: string;
   priority?: Priority;
+  domain?: string;
 }
 
 export interface UpdateIssueDto {
@@ -76,4 +78,5 @@ export interface UpdateIssueDto {
   description?: string;
   status?: IssueStatus;
   priority?: Priority;
+  domain?: string;
 }

@@ -24,6 +24,26 @@ export async function initCommand(options: { dir: string }) {
     console.log('✅ 업로드 디렉토리 생성: .llm-jira/uploads/');
   }
 
+  // LLM 룰 파일 복사
+  console.log('📝 LLM 룰 파일 생성 중...');
+  const templatesDir = path.join(__dirname, '../../../templates');
+  const ruleFiles = ['CLAUDE.md', 'GEMINI.md', 'CHATGPT.md'];
+
+  for (const ruleFile of ruleFiles) {
+    const sourcePath = path.join(templatesDir, ruleFile);
+    const destPath = path.join(projectDir, ruleFile);
+
+    try {
+      if (fs.existsSync(sourcePath)) {
+        fs.copyFileSync(sourcePath, destPath);
+        console.log(`✅ ${ruleFile} 생성 완료`);
+      }
+    } catch (error) {
+      console.warn(`⚠️  ${ruleFile} 생성 실패:`, error);
+    }
+  }
+  console.log();
+
   // LLM 설정 입력받기
   const answers = await inquirer.prompt([
     {

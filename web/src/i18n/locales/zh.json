@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "LLM JIRA",
+    "loading": "加载中..."
+  },
+  "board": {
+    "title": "任务看板",
+    "newTask": "新任务",
+    "llmSettings": "LLM设置",
+    "searchPlaceholder": "搜索任务...",
+    "priorityFilter": "优先级",
+    "allPriorities": "全部",
+    "hideDone": "隐藏已完成",
+    "releaseView": "发布视图",
+    "currentView": "当前视图",
+    "readOnlyNotice": "此视图中无法编辑任务。",
+    "status": {
+      "TODO": "待办",
+      "IN_PROGRESS": "进行中",
+      "DONE": "已完成",
+      "PENDING": "待定"
+    },
+    "priority": {
+      "HIGH": "高",
+      "MEDIUM": "中",
+      "LOW": "低"
+    },
+    "noTasks": "无任务"
+  },
+  "issueCard": {
+    "execute": "执行LLM",
+    "executing": "执行中...",
+    "attachments": "附件",
+    "executions": "执行历史"
+  },
+  "issueDetail": {
+    "title": "任务详情",
+    "edit": "编辑",
+    "save": "保存",
+    "cancel": "取消",
+    "titleLabel": "标题",
+    "titleRequired": "标题 *",
+    "descriptionLabel": "描述",
+    "priorityLabel": "优先级",
+    "status": "状态",
+    "createdAt": "创建时间",
+    "updatedAt": "更新时间",
+    "attachments": "附件",
+    "addFile": "添加文件",
+    "uploading": "上传中...",
+    "noAttachments": "无附件。",
+    "download": "下载",
+    "delete": "删除",
+    "executionHistory": "执行历史",
+    "output": "输出:",
+    "error": "错误:",
+    "deleteConfirm": "确定要删除此文件吗？"
+  },
+  "createIssue": {
+    "title": "创建新任务",
+    "titleLabel": "标题",
+    "titleRequired": "标题 *",
+    "descriptionLabel": "描述",
+    "priorityLabel": "优先级",
+    "cancel": "取消",
+    "create": "创建"
+  },
+  "llmSettings": {
+    "title": "LLM设置",
+    "providerLabel": "选择LLM提供商",
+    "claudeLabel": "Claude (Anthropic)",
+    "claudeDesc": "使用claude CLI",
+    "chatgptLabel": "ChatGPT (OpenAI)",
+    "chatgptDesc": "使用chatgpt CLI",
+    "customLabel": "自定义",
+    "customDesc": "自定义CLI命令",
+    "commandTemplate": "CLI命令模板",
+    "commandPlaceholder": "例如: my-llm --prompt",
+    "commandNote": "提示将自动附加在命令后",
+    "commandPreview": "命令预览:",
+    "languageLabel": "语言设置",
+    "korean": "韩语 (Korean)",
+    "english": "英语 (English)",
+    "japanese": "日语 (Japanese)",
+    "chinese": "中文 (Chinese)",
+    "languageNote": "LLM使用的语言和规则文件编写的语言",
+    "generateRuleFiles": "自动生成规则文件",
+    "generateRuleFilesDesc": "在项目根目录自动生成LLM指南文件",
+    "warning": "注意事项",
+    "warningMessage": "所选LLM CLI必须安装在本地终端。",
+    "cancel": "取消",
+    "save": "保存"
+  },
+  "taskExecutor": {
+    "title": "执行任务",
+    "execute": "执行",
+    "executing": "执行中...",
+    "settingsRequired": "请先配置LLM设置。"
+  },
+  "messages": {
+    "success": "成功",
+    "error": "错误",
+    "updateFailed": "更新任务失败",
+    "uploadFailed": "上传文件失败",
+    "downloadFailed": "下载文件失败",
+    "deleteFailed": "删除文件失败",
+    "executionFailed": "执行LLM任务失败",
+    "createFailed": "创建任务失败"
+  }
+}

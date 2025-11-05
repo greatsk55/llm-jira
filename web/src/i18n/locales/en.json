@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "LLM JIRA",
+    "loading": "Loading..."
+  },
+  "board": {
+    "title": "Task Board",
+    "newTask": "New Task",
+    "llmSettings": "LLM Settings",
+    "searchPlaceholder": "Search tasks...",
+    "priorityFilter": "Priority",
+    "allPriorities": "All",
+    "hideDone": "Hide Done",
+    "releaseView": "Release View",
+    "currentView": "Current View",
+    "readOnlyNotice": "This is a read-only view. You cannot edit tasks.",
+    "status": {
+      "TODO": "To Do",
+      "IN_PROGRESS": "In Progress",
+      "DONE": "Done",
+      "PENDING": "Pending"
+    },
+    "priority": {
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    },
+    "noTasks": "No tasks"
+  },
+  "issueCard": {
+    "execute": "Execute LLM",
+    "executing": "Executing...",
+    "attachments": "Attachments",
+    "executions": "Executions"
+  },
+  "issueDetail": {
+    "title": "Task Details",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "titleLabel": "Title",
+    "titleRequired": "Title *",
+    "descriptionLabel": "Description",
+    "priorityLabel": "Priority",
+    "status": "Status",
+    "createdAt": "Created",
+    "updatedAt": "Updated",
+    "attachments": "Attachments",
+    "addFile": "Add File",
+    "uploading": "Uploading...",
+    "noAttachments": "No attachments",
+    "download": "Download",
+    "delete": "Delete",
+    "executionHistory": "Execution History",
+    "output": "Output:",
+    "error": "Error:",
+    "deleteConfirm": "Are you sure you want to delete this file?"
+  },
+  "createIssue": {
+    "title": "Create New Task",
+    "titleLabel": "Title",
+    "titleRequired": "Title *",
+    "descriptionLabel": "Description",
+    "priorityLabel": "Priority",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+  "llmSettings": {
+    "title": "LLM Settings",
+    "providerLabel": "Select LLM Provider",
+    "claudeLabel": "Claude (Anthropic)",
+    "claudeDesc": "Uses claude CLI",
+    "chatgptLabel": "ChatGPT (OpenAI)",
+    "chatgptDesc": "Uses chatgpt CLI",
+    "customLabel": "Custom",
+    "customDesc": "Custom CLI command",
+    "commandTemplate": "CLI Command Template",
+    "commandPlaceholder": "e.g., my-llm --prompt",
+    "commandNote": "The prompt will be automatically appended after the command",
+    "commandPreview": "Command Preview:",
+    "languageLabel": "Language Settings",
+    "korean": "Korean",
+    "english": "English",
+    "japanese": "Japanese",
+    "chinese": "Chinese",
+    "languageNote": "Language for LLM and rule files",
+    "generateRuleFiles": "Auto-generate Rule Files",
+    "generateRuleFilesDesc": "Automatically generate LLM guideline files in project root",
+    "warning": "Notice",
+    "warningMessage": "The selected LLM CLI must be installed on your local terminal.",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "taskExecutor": {
+    "title": "Execute Task",
+    "execute": "Execute",
+    "executing": "Executing...",
+    "settingsRequired": "Please configure LLM settings first."
+  },
+  "messages": {
+    "success": "Success",
+    "error": "Error",
+    "updateFailed": "Failed to update task",
+    "uploadFailed": "Failed to upload file",
+    "downloadFailed": "Failed to download file",
+    "deleteFailed": "Failed to delete file",
+    "executionFailed": "Failed to execute LLM task",
+    "createFailed": "Failed to create task"
+  }
+}

@@ -15,7 +15,18 @@
       "Bash(curl:*)",
       "Bash(npm run dev:*)",
       "Bash(lsof:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git log:*)",
+      "Bash(git commit:*)",
+      "Bash(xargs kill:*)",
+      "Bash(npm test:*)",
+      "Bash(claude:*)",
+      "Bash(timeout 10 claude:*)",
+      "Bash(ps:*)",
+      "Bash(git push:*)",
+      "Bash(npm start)",
+      "Bash(npx tsx:*)",
+      "Bash(git reset:*)"
     ],
     "deny": [],
     "ask": []
